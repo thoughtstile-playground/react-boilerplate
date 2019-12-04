@@ -1,6 +1,12 @@
 ## Replication
 
-### 1. Installation
+### 1. Setup directory for project and cd inside
+
+```
+mkdir directory-name && cd $_
+```
+
+### 2. Installation
 
 ```
 npx create-react-app ./ &&
@@ -10,7 +16,7 @@ npx tailwind init &&
 npm audit fix
 ```
 
-### 2. Cleanup
+### 3. Cleanup
 
 ```
 touch postcss.config.js &&
@@ -33,7 +39,7 @@ echo -e "import App from './App'\n" >> ./src/index.js &&
 echo -e "ReactDOM.render(<App />, document.getElementById('root'));" >> ./src/index.js
 ```
 
-### 3. Alter package.json
+### 4. Alter package.json
 
 ```
   "scripts": {
