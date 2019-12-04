@@ -1,5 +1,3 @@
-## Replication
-
 ### 1. Installation
 
 ```
