@@ -6,6 +6,7 @@
 npx create-react-app ./ &&
 npm install tailwindcss postcss-cli autoprefixer --save-dev &&
 npm install eslint-plugin-react-hooks --save-dev &&
+npm install --save styled-components &&
 npx tailwind init &&
 npm audit fix
 ```
@@ -49,8 +50,6 @@ echo -e "ReactDOM.render(<App />, document.getElementById('root'));" >> ./src/in
 
 ---
 
-# Archive
-
 ## 12-3-2019:
 
 ### 1. Installation
@@ -59,6 +58,7 @@ echo -e "ReactDOM.render(<App />, document.getElementById('root'));" >> ./src/in
 npx create-react-app ./ &&
 npm install tailwindcss postcss-cli autoprefixer --save-dev &&
 npm install eslint-plugin-react-hooks --save-dev &&
+npm install --save styled-components &&
 npx tailwind init &&
 npm audit fix
 ```
@@ -84,6 +84,20 @@ echo -e "import ReactDOM from 'react-dom'" >> ./src/index.js &&
 echo -e "import './styles.css'" >> ./src/index.js &&
 echo -e "import App from './App'\n" >> ./src/index.js &&
 echo -e "ReactDOM.render(<App />, document.getElementById('root'));" >> ./src/index.js
+```
+
+### 3. Alter package.json
+
+```
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:styles": "postcss src/styles/tailwind.css -o src/styles.css",
+    "prebuild": "npm run build:styles",
+    "prestart": "npm run build:styles"
+  },
 ```
 
 ---
