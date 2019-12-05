@@ -1,6 +1,6 @@
 ### 1. Installation
 
-```
+```shell
 npx create-react-app ./ &&
 npm install tailwindcss postcss-cli autoprefixer --save-dev &&
 npm install eslint-plugin-react-hooks --save-dev &&
@@ -11,7 +11,7 @@ npm audit fix
 
 ### 2. Cleanup
 
-```
+```shell
 touch postcss.config.js &&
 mkdir -p ./src/styles &&
 touch ./src/styles/tailwind.css &&
@@ -34,7 +34,7 @@ echo -e "ReactDOM.render(<App />, document.getElementById('root'));" >> ./src/in
 
 ### 3. Alter package.json
 
-```
+```json
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -52,7 +52,7 @@ echo -e "ReactDOM.render(<App />, document.getElementById('root'));" >> ./src/in
 
 ### 1. Installation
 
-```
+```shell
 npx create-react-app ./ &&
 npm install tailwindcss postcss-cli autoprefixer --save-dev &&
 npm install eslint-plugin-react-hooks --save-dev &&
@@ -63,7 +63,7 @@ npm audit fix
 
 ### 2. Cleanup
 
-```
+```shell
 touch postcss.config.js &&
 mkdir -p ./src/styles &&
 touch ./src/styles/tailwind.css &&
@@ -86,7 +86,7 @@ echo -e "ReactDOM.render(<App />, document.getElementById('root'));" >> ./src/in
 
 ### 3. Alter package.json
 
-```
+```json
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
