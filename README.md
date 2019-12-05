@@ -1,6 +1,6 @@
 ### 1. Installation
 
-```console
+```shell
 npx create-react-app ./ &&
 npm install tailwindcss postcss-cli autoprefixer --save-dev &&
 npm install eslint-plugin-react-hooks --save-dev &&
